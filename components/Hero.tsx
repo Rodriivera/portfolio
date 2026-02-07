@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { memo } from "react";
 
 const Hero = memo(function Hero() {
@@ -41,24 +41,32 @@ const Hero = memo(function Hero() {
         
       </motion.div>
 
-      <motion.h1 
-        className="text-2xl lg:text-5xl"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-      >
-        {t[lang].title}
-      </motion.h1>
+      <AnimatePresence mode="wait">
+        <motion.h1 
+          key={`title-${lang}`}
+          className="text-2xl lg:text-5xl"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.4 }}
+        >
+          {t[lang].title}
+        </motion.h1>
+      </AnimatePresence>
 
-      <motion.p 
-        className="text-3xl lg:text-5xl"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        {t[lang].subtitle}
-        <span className="text-gray-500">{t[lang].performance}</span>{t[lang].rest}
-      </motion.p>
+      <AnimatePresence mode="wait">
+        <motion.p 
+          key={`subtitle-${lang}`}
+          className="text-3xl lg:text-5xl"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.4, delay: 0.05 }}
+        >
+          {t[lang].subtitle}
+          <span className="text-gray-500">{t[lang].performance}</span>{t[lang].rest}
+        </motion.p>
+      </AnimatePresence>
     </section>
   );
 });

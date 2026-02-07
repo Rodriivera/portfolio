@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "./LanguageProvider";
 
 
@@ -32,16 +32,43 @@ export default function Navbar() {
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         <ul className="flex gap-3 lg:gap-6 text-lg lg:text-xl items-center">
-          <Link className="link" href="#work">{t[lang].work}</Link>
-          <Link className="link" href="#about">{t[lang].about}</Link>
-          <button
-            onClick={toggleLang}
-            aria-label="Toggle language"
-            className="link text-lg lg:text-xl inline-flex items-center cursor-pointer gap-2"
-          >
-            <span>{nextLabel}</span>
-            <Image src={nextFlagSrc} alt={`Switch to ${nextLabel}`} width={20} height={14} className="inline-block" />
-          </button>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`work-${lang}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Link className="link" href="#work">{t[lang].work}</Link>
+            </motion.div>
+          </AnimatePresence>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`about-${lang}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Link className="link" href="#about">{t[lang].about}</Link>
+            </motion.div>
+          </AnimatePresence>
+          <AnimatePresence mode="wait">
+            <motion.button
+              key={`lang-${lang}`}
+              onClick={toggleLang}
+              aria-label="Toggle language"
+              className="link text-lg lg:text-xl inline-flex items-center cursor-pointer gap-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <span>{nextLabel}</span>
+              <Image src={nextFlagSrc} alt={`Switch to ${nextLabel}`} width={20} height={14} className="inline-block" />
+            </motion.button>
+          </AnimatePresence>
         </ul>
       </motion.nav>
 

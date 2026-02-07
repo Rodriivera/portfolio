@@ -31,6 +31,7 @@
     "@react-instastories/external": "^1.0.7",
     "@react-instastories/presets": "^1.0.7",
     "@remixicon/react": "^4.8.0",
+    "geist": "^1.7.0",
     "motion": "^12.28.1",
     "next": "16.1.4",
     "nucleo-flags": "^1.1.3",
