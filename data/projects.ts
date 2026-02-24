@@ -11,6 +11,9 @@ export const gradients = {
   pink: `
     radial-gradient(at 70% 63%, hsla(265,57%,15%,1) 0, transparent 50%),radial-gradient(at 98% 2%, hsla(305,43%,18%,1) 0, transparent 50%),  radial-gradient(at 29% 36%, hsla(7,26%,47%,1) 0, transparent 50%),radial-gradient(at 0% 100%, hsla(267,55%,15%,1) 0, transparent 50%),radial-gradient(at 96% 93%, hsla(1,100%,64%,1) 0, transparent 50%),  radial-gradient(at 0% 0%, hsla(38,68%,72%,1) 0, transparent 50%);
   `,
+  ember: `
+    radial-gradient(at 14% 18%, hsla(12,88%,70%,1) 0, transparent 46%),radial-gradient(at 85% 12%, hsla(34,92%,64%,1) 0, transparent 50%),radial-gradient(at 22% 82%, hsla(346,72%,46%,1) 0, transparent 50%),radial-gradient(at 78% 76%, hsla(18,64%,38%,1) 0, transparent 50%),radial-gradient(at 50% 52%, hsla(28,79%,54%,1) 0, transparent 48%),radial-gradient(at 0% 100%, hsla(10,58%,26%,1) 0, transparent 52%);
+  `,
 };
 
 export const projects = [
@@ -27,7 +30,7 @@ export const projects = [
     github: "https://github.com/Rodriivera/ecommerce-react-front",
     website:
       "https://ecommerce-react-front-mu.vercel.app/",
-    gradient: gradients.violet,
+    gradient: gradients.ember,
     technologies: [
       { name: "Node.js", icon: "/icons/nodejs.svg" },
       { name: "Express.js", icon: "/icons/express.svg" },
