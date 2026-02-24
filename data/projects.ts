@@ -16,14 +16,42 @@ export const gradients = {
 export const projects = [
   {
     id: 1,
+    title: "Atelier Ecommerce",
+    description:
+      "Atelier is an e-commerce where users can browse products, add them to their cart, and make purchases through a clean and modern interface. It also includes an admin area to manage products, prices, images, orders, and shipping settings all in one place.",
+    description_es:
+      "Atelier es una tienda online donde los usuarios pueden navegar productos, agregarlos al carrito y realizar compras a través de una interfaz limpia y moderna. También incluye un área de administración para gestionar productos, precios, imágenes, pedidos y configuraciones de envío todo en un solo lugar.",
+    image: "/atelier.png",
+    year: "2026",
+    slug: "atelier-ecommerce",
+    github: "https://github.com/Rodriivera/ecommerce-react-front",
+    website:
+      "https://ecommerce-react-front-mu.vercel.app/",
+    gradient: gradients.violet,
+    technologies: [
+      { name: "Node.js", icon: "/icons/nodejs.svg" },
+      { name: "Express.js", icon: "/icons/express.svg" },
+      { name: "TypeScript", icon: "/icons/typescript.svg" },
+      { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
+      { name: "React.js", icon: "/icons/react.svg" },
+      { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
+      { name: "Vercel", icon: "/icons/vercel.svg" },
+      { name: "Git", icon: "/icons/git.svg" },
+    ],
+  },
+  {
+    id: 2,
     title: "Taskly App",
-    description: "Taskly is a full-stack Kanban-based project and task management platform that lets teams create projects, manage tasks by status, collaborate, add notes, and track progress in real time with secure authentication and role-based access.",
-    description_es: "Taskly es una plataforma full-stack de gestión de proyectos y tareas basada en Kanban que permite crear proyectos, gestionar tareas por estado, colaborar, añadir notas y seguir el progreso en tiempo real con autenticación segura y control de roles.",
+    description:
+      "Taskly is a full-stack Kanban-based project and task management platform that lets teams create projects, manage tasks by status, collaborate, add notes, and track progress in real time with secure authentication and role-based access.",
+    description_es:
+      "Taskly es una plataforma full-stack de gestión de proyectos y tareas basada en Kanban que permite crear proyectos, gestionar tareas por estado, colaborar, añadir notas y seguir el progreso en tiempo real con autenticación segura y control de roles.",
     image: "/taskly.png",
     year: "2026",
     slug: "taskly-app",
     github: "https://github.com/Rodriivera/taskly_frontend",
-    website: "https://taskly-frontend-rodrivera111-gmailcoms-projects.vercel.app/",
+    website:
+      "https://taskly-frontend-rodrivera111-gmailcoms-projects.vercel.app/",
     gradient: gradients.violet,
     technologies: [
       { name: "Node.js", icon: "/icons/nodejs.svg" },
@@ -37,10 +65,12 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Ordenes App",
-    description: "Ordenes App helps businesses automate order workflows, reduce manual processes, and manage products and availability, offering an intuitive customer experience and a centralized admin panel for real-time order control.",
-    description_es: "Ordenes App ayuda a las empresas a automatizar flujos de órdenes, reducir procesos manuales y gestionar productos y disponibilidad, ofreciendo una experiencia intuitiva al cliente y un panel de administración centralizado para el control de órdenes en tiempo real.",
+    description:
+      "Ordenes App helps businesses automate order workflows, reduce manual processes, and manage products and availability, offering an intuitive customer experience and a centralized admin panel for real-time order control.",
+    description_es:
+      "Ordenes App ayuda a las empresas a automatizar flujos de órdenes, reducir procesos manuales y gestionar productos y disponibilidad, ofreciendo una experiencia intuitiva al cliente y un panel de administración centralizado para el control de órdenes en tiempo real.",
     image: "/ordenes.png",
     year: "2026",
     slug: "ordenes-app",
@@ -59,10 +89,12 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Bolsa de trabajo",
-    description: "Bolsa de Trabajo is a job board platform that connects students with job opportunities, allowing users to build profiles, upload résumés, save and apply to offers, while administrators manage postings and export applicant data for companies.",
-    description_es: "Bolsa de Trabajo es una plataforma de empleo que conecta a estudiantes con oportunidades laborales, permitiendo crear perfiles, subir currículums, guardar y postular a ofertas, mientras los administradores gestionan publicaciones y exportan datos de postulantes para las empresas.",
+    description:
+      "Bolsa de Trabajo is a job board platform that connects students with job opportunities, allowing users to build profiles, upload résumés, save and apply to offers, while administrators manage postings and export applicant data for companies.",
+    description_es:
+      "Bolsa de Trabajo es una plataforma de empleo que conecta a estudiantes con oportunidades laborales, permitiendo crear perfiles, subir currículums, guardar y postular a ofertas, mientras los administradores gestionan publicaciones y exportan datos de postulantes para las empresas.",
     image: "/bolsadetrabajo.png",
     year: "2025",
     slug: "bolsa-de-trabajo",
@@ -78,7 +110,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Aromas Ecommerce",
     description:
       "Aromas is an e-commerce platform for fragrances and lifestyle products where users can browse, add items to cart or favorites, make purchases, and administrators manage products and view statistics through a dashboard.",
