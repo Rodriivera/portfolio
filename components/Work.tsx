@@ -105,7 +105,7 @@ const ProjectCard = memo(function ProjectCard({ project, index }: { project: any
               height={40}
               title={tech.name}
               loading="lazy"
-              className="transition-all duration-300 cursor-pointer filter brightness-0 invert hover:brightness-100 hover:invert-0"
+              className="transition-all w-8 h-8 lg:w-10 lg:h-10 duration-300 cursor-pointer filter brightness-0 invert hover:brightness-100 hover:invert-0"
             />
           </motion.div>
         ))}

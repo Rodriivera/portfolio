@@ -19,21 +19,20 @@ export const gradients = {
 export const projects = [
   {
     id: 1,
-    title: "Atelier Ecommerce",
+    title: "Nawea Ecommerce",
     description:
-      "Atelier is an e-commerce where users can browse products, add them to their cart, and make purchases through a clean and modern interface. It also includes an admin area to manage products, prices, images, orders, and shipping settings all in one place.",
+      "Nawea is an e-commerce where users can browse products, add them to their cart, and make purchases through a clean and modern interface. It also includes an admin area to manage products, prices, images, orders, and shipping settings all in one place.",
     description_es:
-      "Atelier es una tienda online donde los usuarios pueden navegar productos, agregarlos al carrito y realizar compras a través de una interfaz limpia y moderna. También incluye un área de administración para gestionar productos, precios, imágenes, pedidos y configuraciones de envío todo en un solo lugar.",
-    image: "/atelier.png",
+      "Nawea es una tienda online donde los usuarios pueden navegar productos, agregarlos al carrito y realizar compras a través de una interfaz limpia y moderna. También incluye un área de administración para gestionar productos, precios, imágenes, pedidos y configuraciones de envío todo en un solo lugar.",
+    image: "/nawea.webp",
     year: "2026",
-    slug: "atelier-ecommerce",
-    github: "https://github.com/Rodriivera/ecommerce-react-front",
+    slug: "nawea-ecommerce",
+    github: "https://github.com/Rodriivera/Nawea-ecommerce",
     website:
-      "https://ecommerce-react-front-mu.vercel.app/",
+      "https://nawea-ecommerce.vercel.app/",
     gradient: gradients.ember,
     technologies: [
-      { name: "Node.js", icon: "/icons/nodejs.svg" },
-      { name: "Express.js", icon: "/icons/express.svg" },
+      { name: "Next.js", icon: "/icons/nextjs.svg" },
       { name: "TypeScript", icon: "/icons/typescript.svg" },
       { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
       { name: "React.js", icon: "/icons/react.svg" },
