@@ -48,7 +48,7 @@ export const projects = [
       "Taskly is a full-stack Kanban-based project and task management platform that lets teams create projects, manage tasks by status, collaborate, add notes, and track progress in real time with secure authentication and role-based access.",
     description_es:
       "Taskly es una plataforma full-stack de gestión de proyectos y tareas basada en Kanban que permite crear proyectos, gestionar tareas por estado, colaborar, añadir notas y seguir el progreso en tiempo real con autenticación segura y control de roles.",
-    image: "/taskly.png",
+    image: "/tasklyy.png",
     year: "2026",
     slug: "taskly-app",
     github: "https://github.com/Rodriivera/taskly_frontend",
@@ -73,7 +73,7 @@ export const projects = [
       "Ordenes App helps businesses automate order workflows, reduce manual processes, and manage products and availability, offering an intuitive customer experience and a centralized admin panel for real-time order control.",
     description_es:
       "Ordenes App ayuda a las empresas a automatizar flujos de órdenes, reducir procesos manuales y gestionar productos y disponibilidad, ofreciendo una experiencia intuitiva al cliente y un panel de administración centralizado para el control de órdenes en tiempo real.",
-    image: "/ordenes.png",
+    image: "/ordenes.jpg",
     year: "2026",
     slug: "ordenes-app",
     github: "https://github.com/Rodriivera/ordenes-next",
